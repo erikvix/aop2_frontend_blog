@@ -51,7 +51,6 @@ body {
   color: var(--clr-light);
 }
 
-img,
 picture,
 video,
 canvas,
@@ -93,10 +92,9 @@ body::-webkit-scrollbar-thumb {
 
 .main {
     max-width: 1440px;
-    height: 100vh;
     margin: 0 auto;
     border: 1px solid var(--clr-slate800);
-    /* padding: 6rem 1rem 2rem 1rem; */
+    padding:0px 20px;
     display: flex;
     flex-direction: column;
 }
@@ -119,4 +117,35 @@ body::-webkit-scrollbar-thumb {
 
 .header-main {
     width: 100%;
+}
+
+h1, h2{
+  text-align: center;
+  padding: 30px;
+}
+
+img{
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p, ol{
+  font-family: sans-serif;
+  text-align: justify;
+  font-size: 20px;
+}
+
+footer{
+  display: block; 
+  margin-top: 30px;
+  padding-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.assinatura{
+  font-size: 20px;
+  text-align: left;
+  margin-left: 15%;
 }
