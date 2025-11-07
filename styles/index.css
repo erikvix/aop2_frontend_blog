@@ -93,17 +93,24 @@ body::-webkit-scrollbar-thumb {
 }
 
 .main {
-  max-width: 680px;
-  margin: 0 auto;
   padding: 0px 20px;
   display: flex;
   flex-direction: column;
+}
+
+.logo {
+  font-family: "Tiny5";
 }
 
 .header-left {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+.main-content {
+  max-width: 680px;
+  margin: 0 auto;
 }
 
 .header {
