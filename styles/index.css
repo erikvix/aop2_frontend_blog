@@ -73,6 +73,7 @@ button {
 
 a {
   color: var(--clr-rose);
+  text-decoration: none;
 }
 
 strong {
@@ -99,13 +100,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .logo {
-  font-family: "Tiny5";
-}
-
-.header-left {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+  width: 58px;
+  height: auto;
 }
 
 .main-content {
@@ -113,18 +109,47 @@ body::-webkit-scrollbar-thumb {
   margin: 0 auto;
 }
 
-.header {
-  height: auto;
-  background-color: var(--clr-dark);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  border: 1px solid var(--clr-slate800);
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+nav a {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
 }
 
-.header-main {
-  width: 100%;
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.logo-text {
+  font-family: "Tiny5";
+  font-size: 2rem;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-content a {
+  color: white;
 }
 
 h1,
